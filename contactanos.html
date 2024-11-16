@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Para utilizar la tabla de caracteres del idioma español -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>EstudioContable</title> <!-- Es el título que aparecerá en la pestaña del navegador -->
+
+    <!-- Enlazar el HTML con el favicon -->
+    <link rel="shortcut icon" href="imagenes/favicon-logo.png" type="image/x-icon">
+
+    <!-- Enlazar el HTML con una hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="css/estilos.css">   
+</head>
+<body>
+    <header id="barra-superior">
+        <div class="contenedor">
+            <div class="row">
+                <div class="bs-contactos">
+                    <a href="tel:054716155"><i class="fa-solid fa-phone"></i> (054) 716 155</a>
+                    <a href="mailto:estudiocontable.sarita"><i class="fa-solid fa-envelope"></i> estudiocontable.sarita@gmail.com</a>
+                    <span><i class="fa-solid fa-clock"></i> Lun - Sab: 8:30 a.m. a 6:00 p.m.</span>
+                </div>
+
+                <div class="bs-rs">
+                    <a target="_blank" href="https://www.facebook.com/saritaasociados/"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=-N_p0UAIQIg"><i class="fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/saritaclementejordan/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header id="cabecera">
+        <div class="contenedor">
+            <!-- Barra de navegación -->
+            <nav class="nav-bar">
+                <!-- Logo de la empresa -->
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo-estudio.jpeg" alt="" class="imgfluid">
+                    </a>                    
+                </div> <!-- fin de nav-logo -->
+
+                <!-- Barra de menú -->
+                <ul class="nav-menu">
+                    <!-- Elementos del menú -->
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="nuestrafirma.html">Nuestra Firma</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="servicios.html">Servicios</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="outsourcing.html">Outsourcing</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="consultores.html">Consultores</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link pagina-activa" href="contactanos.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="blog.html">Blog</a>
+                    </li>
+                </ul> <!-- fin de nav-menu -->
+            </nav> <!-- fin de nav-bar -->          
+        </div>
+    </header>
+
+    <!-- Título de página -->
+    <section id="titulo-pagina">
+        <div class="contenedor">
+            <h2>Contáctanos</h2>
+            <span><i class="fa-solid fa-location-dot"></i> <a href="index.html">Inicio</a> / Contáctanos</span>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contactanos-formulario" class="espaciado">
+        <div class="contenedor">
+            <h2>Estamos listos para asesorarte</h2>
+            <h3>Nuestro equipo se pondrá en contacto para ayudarte en lo que necesites.</h3>
+
+            <div class="row del-padded">
+                <div class="col col-66">
+                    <!-- Objeto formulario -->
+                    <form action="registro-contacto.php" method="post" class="form-contacto">
+                        <!-- Flexbox del formulario -->
+                        <div class="row del-padded">
+                            <!-- Fila 1 -->
+                            <!-- div.col.col-50*2 -->
+                            <div class="col col-50">
+                                <input class="form-control" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+                            </div>
+                            <div class="col col-50">
+                                <input class="form-control" type="text" placeholder="Apellido" name="apellido" id="nombre" required>
+                            </div>
+
+                            <!-- Fila 2 -->
+                            <div class="col col-50">
+                                <input class="form-control" type="email" placeholder="Correo electrónico" name="correo" id="correo" required>
+                            </div>
+                            <div class="col col-50">
+                                <input class="form-control" type="tel" placeholder="Teléfono" name="telefono" id="telefono" required>
+                            </div>
+
+                            <!-- Fila 3 -->
+                            <div class="col col-100">
+                                <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje" required rows="5"></textarea>
+                            </div>
+
+                            <!-- Fila 4 -->
+                            <div class="col col-100">
+                                <input class="form-control" type="text" name="captcha" id="captcha" placeholder="Captcha: 3 + 4 = ?" required>
+                            </div>
+
+                            <!-- Fila 5 -->
+                            <div class="col col-100">
+                                <input type="checkbox" required name="acuerdo" id="acuerdo">
+                                <label for="acuerdo">
+                                    He leído los <a target="_blank" href="https://www.utp.edu.pe/web/politicas-privacidad">términos y condiciones</a> de privacidad acerca del tratamiento de mis datos personales.
+                                </label>
+                            </div>
+
+                            <!-- Fila 6 -->
+                             <div class="col col-100">
+                                <button class="form-button" type="submit">Enviar mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                             </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col col-33">
+                    <div class="icono-con-texto1">
+                        <i class="fa-solid fa-book"></i>
+                        <div class="texto1">
+                            <h3>Nuestra Dirección</h3>
+                            <p>Urb. La Libertad Av. Villa Hermosa 513</p> 
+                            <p>2do piso - Cerro Colorado - Arequipa</p>
+                        </div>
+                    </div>
+                    <div class="icono-con-texto1">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="texto1">
+                            <h3>E_mail</h3>
+                            <p>estudiocontable.sarita@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="icono-con-texto1">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="texto1">
+                            <h3>Teléfono</h3>
+                            <p>(054) 716 155</p> 
+                        </div>
+                    </div>
+                    <div class="icono-con-texto1">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="texto1">
+                            <h3>Horarios Atención</h3>
+                            <p>Lun - Sab: 8:30 a.m. a 6:00 p.m.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="pie1-rs">
+        <a target="_blank" href="https://www.facebook.com/saritaasociados/">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=-N_p0UAIQIg">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+         <a target="_blank" href="https://www.instagram.com/saritaclementejordan/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+</div>
+
+    
+    <!-- Mapa de ubicación -->
+    <section id="contactanos-mapa">
+       <iframe class="ajuste-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.973111204109!2d-71.56168048809717!3d-16.3753320842841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a11cabd72cf%3A0x19c68dfff14aedde!2sAv.%20Villa%20Hermosa%20513%2C%20Cerro%20Colorado%2004014!5e0!3m2!1ses!2spe!4v1731701217957!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer id="pie" class="espaciado">
+        <div class="contenedor">
+            <div class="row">
+                <span>SARITA & ASOCIADOS - Todos los derechos reservados</span>
+                    <div class="pie-rs">
+                    <a target="_blank" href="https://www.facebook.com/saritaasociados/"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=-N_p0UAIQIg"><i class="fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/saritaclementejordan/"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=51999933237"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>            
+        </div>
+    </footer>
+
+    <!-- Botón para realizar un scroll-up -->
+    <a href="#" class="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+</html>
